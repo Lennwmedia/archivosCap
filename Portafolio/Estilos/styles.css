@@ -286,7 +286,6 @@
     main {
       width: 100%;
     }
-    
     header {
       text-align: right;
     }
@@ -303,6 +302,7 @@
     header {
       text-align: right;
     }
+
   }
 
   @media (max-width: 800px) {
@@ -326,22 +326,45 @@
     header {
       text-align: right;
     }
+    main {
+      display: block;
+      flex-direction: column;
+    }
+    footer {
+      text-align: right;
+    }
+    ;
+  ul li {
+    display: flex
+    ;
   }
 
   @media (max-width: 550px) {
     header{
       text-align: right;
     }
+    main {
+      display: block;
+      flex-direction: column;
+    }
   }
   @media (max-width: 450px) {
     header{
       text-align: center;
+    }
+    main {
+      display: block;
+      flex-direction: column;
     }
   }
 
   @media (max-width: 350px) {
     header {
       text-align: center;
+    }
+    main {
+      display: block;
+      flex-direction: column;
     }
   }
 
@@ -387,5 +410,4 @@
       text-align: center;
     }
   }
-  
-  
+}
