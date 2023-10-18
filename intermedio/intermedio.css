@@ -1,0 +1,185 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+    top: 0;
+}
+.head{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+    width: 98%;
+    height: 80px;
+    top: 0;
+    background-color: #010107;
+}
+
+.nav{
+    align-items: center;
+    display: flex;
+    width: 90%;
+    max-width: 90%;
+    height: 50px;
+    padding: 90px;
+}
+.nav > .head-nav {
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-inline-start: 0;
+  margin-block: 0;
+  height: 100%;
+  
+}
+.nav > .head-nav > .playlist {
+    color: #dfdfe2;
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+    display: inline-block;
+    text-align: center;
+    /*margin-left: 100px;*/
+    
+}
+.playlist{
+justify-content: center;
+width: 15%;
+
+}
+li, a {
+display: flex;
+    color: inherit;
+    text-decoration: none;
+    text-align: center;
+}
+
+body{ 
+    background: #010107;
+    margin: 0;
+    width: 100%;
+    
+}
+.aggcolor{
+    color: #7fffda;
+    text-decoration: none;
+}
+div{
+    width: 90%;
+    border: solid 2px #efffef;
+    padding: 10px;
+    animation-name: colorblid;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    border-radius: 5px;
+    margin:1px 2px 4px 2px;
+    
+}
+main {
+    padding-top: 80px;
+}
+h1, h3, h4, p{
+    color: whitesmoke;
+}
+i{
+    color: white;
+}
+
+.italic{ 
+    font-style: italic;
+}
+
+h1{
+    text-align: left;
+    text-shadow: 3px 2px 3px  #efffef, 2px 2px 1px #777;
+    font-size: 40px;
+    
+
+}
+
+img{
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    margin-left: 10px;
+    
+}
+.wrap{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.codepic{
+    text-decoration: none;
+    color: #ffff;
+}
+a:hover{
+    color:#777;
+}
+
+ul{
+    list-style: square inside none;
+}
+.star{
+    display: flex;
+    animation-name: starlight;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    justify-content: center;
+    width: 20%;
+}
+label{
+    color: whitesmoke;
+}
+.navegacion{
+    /*display: flex;*/
+    background: #010107;
+    flex: 1 1 100%;
+    margin: 10px 10px 0 0;
+    justify-content: left;
+    
+}
+.navegacion a{
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 0 10px;
+    letter-spacing: 2px;
+}
+.navegacion a:hover{
+    color: lightgreen;
+}
+
+@keyframes colorblid {
+   
+        0% {border-color: red;}
+        25% {border-color: blue;}
+        50% {border-color: yellow;}
+        75% {border-color: rgb(169, 18, 199);}
+        100% {border-color: yellowgreen;}
+
+    }
+  @keyframes starlight {
+    0% {border-color: #fff;}
+    50%{border-color: #efffef;}
+    100% {border-color: #777;}
+  }
+
+  @media screen and (max-width:600px){
+    body{
+        text-align: left;
+
+    }
+    .wrap{
+        flex-direction: column;
+    }
+
+    
+  }

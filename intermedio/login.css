@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+div{
+    text-align: center;
+    background: linear-gradient( 180deg, rgb(35, 60, 83), rgb(10, 177, 168), rgb(18, 240, 166), rgb(8, 241, 39));
+    padding: 40px 0px 90px 0px;
+    margin: 10% 30%;
+    box-shadow: 3px 4px 3px #5a5858;border-radius: 3px;
+  
+}
+img{
+    width: 100px;
+    border-radius: 40%;
+}
+h2{
+    color: #ffff;
+    font-size: 40px;
+    text-shadow: 3px 2px 3px #b6abab;
+    line-height: 1.8;
+    font:bold 40px 'Ubuntu', serif;;
+    
+}
+p{
+    color: #031c4b;
+    line-height: 1.2;
+    padding: 3px;
+}
+input{
+    color: #ffff;
+    background-color: #000;
+    font-weight: bold;
+    animation: star 2s infinite alternate;
+    border-radius: 5px;
+    border: 2px solid;
+    padding: 3px;
+    
+}
+.boton{
+    border-radius: 3px;
+    margin-top: 8px;
+}
+.boton:hover{.feet{
+    background: #1b1b32;
+
+}
+    
+    background-color: #b6abab;
+}
+.boton:active{
+    background-color: aqua;
+}
+.login.out{
+    padding: 3px;
+    line-height: 1.5;
+}
+
+@keyframes star {
+    0% {border-color: #ffff;}
+    50%{border-color: #efffef;}
+    100% {border-color: #b6abab;}
+} 
