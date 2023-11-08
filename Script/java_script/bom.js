@@ -30,6 +30,8 @@ window.addEventListener('load', () => {
 
     boton.addEventListener('click', function () {
         cambiarDeColor();
+        console.log(this)
+        this.style.border = '10px solid blue'
     })
 
     //Cuando el cursor entra al boton

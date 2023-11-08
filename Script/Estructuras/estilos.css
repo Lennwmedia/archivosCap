@@ -1,0 +1,17 @@
+.box {
+    width: 200px;
+    height: 250px;
+    margin: 20px;
+    float: left;
+}
+
+ .dashed {
+    border: 3px dashed black;
+        
+}
+
+.paf {
+    text-align: center;
+    
+   
+}
