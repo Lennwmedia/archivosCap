@@ -32,28 +32,55 @@
 <script type="text/javascript" src="/Script/java_script/localStorageEjer.js"></script>
  <script type="text/javascript" src="/Script/java_script/peticiones.js"></script>
     <script type="text/javascript" src="/Script/java_script/funcionesMatch.js"></script>
--->
     <script type="text/javascript" src="/Script/java_script/practica2.js"></script>
+    <script type="text/javascript" src="/Script/java_script/'use strict'.js"></script>
+-->
+
+<script type="text/javascript" src="/Script/java_script/'use strict'.js"></script>
+
+<style>
+    .caja {
+        width: 300px;
+        height: 400px;
+        float: left;
+        margin: 25px;
+      
+    }
+    .dashed {
+        border: 3px dashed black;
+        padding: 10px;
+        text-align: center;
+
+    }
+</style>
 </head>
 
 <body>
     <h1 id="title">Bienvenidos a Notación de Objetos de JS</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam error animi repudiandae nulla eum ea facere,
+    <div id="divfather"></div>
+    
+    <p style="align-content: right;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam error animi repudiandae nulla eum ea facere,
         autem delectus alias excepturi eligendi ipsum iure a et quibusdam consectetur cupiditate, ab cum.</p>
     <p class="red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam error animi repudiandae nulla eum
         ea facere, autem delectus alias excepturi eligendi ipsum iure a et quibusdam consectetur cupiditate, ab cum.</p>
-    <p class="red">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam error animi repudiandae nulla eum
+    <p class="yellow">Lorem ipsum <mark>color</mark> sit amet consectetur adipisicing elit. Laboriosam error animi repudiandae nulla eum
         ea facere, autem delectus alias excepturi eligendi ipsum iure a et quibusdam consectetur cupiditate, ab cum.</p>
     
     <p>
         <button id="boton">Enter</button>
         <button id="stop">Parar</button>
         <button id="next">Continuar</button>
-    </p>
-<!--
-    <form action="#">
+
+        <form action="#">
         <input type="text" name="nombre" id="inp-name">
     </form>
+    </p>
+
+    <h3 id="myText">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, eveniet. Doloremque facere ipsam, consectetur inventore expedita accusantium nisi earum obcaecati corrupti autem sequi. Similique, laudantium? Eveniet doloremque fugit laborum tempora.</h3>
+    
+<!--
+    
+    
 
  
     <div id="dato"></div>
@@ -79,6 +106,7 @@
         <button type="submit">Borrar</button>
     </form> 
 -->
+
 <h2>Lista de usuarios</h2>
 <div id="usuarios">
     <span class="load">Cargando lista de datos...</span>
@@ -99,6 +127,41 @@
 <div id=listUser">
     <span class="load">Cargando usuarios...</span>
 </div>
+
+<div>
+    <h2>Formulario</h2>
+
+    <div class="caja">
+
+        <form action="#" method="POST" id="formulario" onsubmit="return false">
+            <label for="nombre">Nombre:</label> <br>
+            <input type="text" name="nombre" id="nombre"> <br>
+            <span id="i-name"></span> <br>
+
+            <label for="apellido">Apellidos:</label> <br>
+            <input type="text" name="apellido" id="apellido"> <br>
+            <span id="i-apell"></span> <br>
+            
+            <label for="edad">Edad:</label> <br>
+            <input type="number" name="edad" id="edad"> <br>
+            <span id="i-edad"></span> <br>
+
+            <input type="submit" value="Enviar" id="submit">
+    </form>
+    </div>
+
+    <div class="caja dashed">
+        <h3>Información Personal</h3>
+        <hr>
+
+        <p id="p_name">Nombre: <span></span></p>
+        <p id="p_apell">Apellidos: <span></span></p>
+        <p id="p_edad">Edad: <span></span></p>
+    </div>
+</div>
+
+<div id="caja_de_peliculas"></div>
+
 </body>
 
 </html>
